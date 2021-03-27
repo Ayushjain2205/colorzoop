@@ -1,14 +1,14 @@
-import logo from './logo.svg'
-import './App.css'
-import ColorPalette from './ColorPalette'
-import seedColors from './seedPalletes'
+import "./App.css";
+import ColorPalette from "./ColorPalette";
+import seedColors from "./seedPalletes";
+import { generatePalette } from "./colorHelpers";
 
 function App() {
   return (
     <div>
-      <ColorPalette {...seedColors[2]} />
+      <ColorPalette palette={generatePalette(seedColors[4])} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
